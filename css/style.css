@@ -241,3 +241,24 @@ body {
   height: 166px;
   width: 166px;
 }
+
+/* Подвал сайта */
+.footer {
+  padding-top: 61px;
+  padding-bottom: 93px;
+  background-color: #f1f1f1;
+}
+
+.footer-container {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.requisites {
+  display: block;
+}
+
+.requisites-text {
+}
