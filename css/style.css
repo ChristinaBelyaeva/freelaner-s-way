@@ -2,9 +2,18 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Museo Cyrl 900";
+  src: url("../fonts/MuseoCyrl-900.woff2") format("woff2"),
+    url("../fonts/MuseoCyrl-900.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
-  font-family: Tahoma, sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #202020;
 }
 
@@ -68,6 +77,7 @@ body {
 
 .title {
   margin: 0;
+  font-family: "Museo Cyrl 900";
   font-size: 54px;
   margin-bottom: 15px;
 }
@@ -131,4 +141,58 @@ body {
   text-align: center;
   color: #f89c02;
   border: 2px solid #f89c02;
+}
+
+/* О книге */
+.container-about {
+  background-color: #f1f1f1;
+  padding: 95px 0;
+}
+
+.about {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about-book {
+  max-width: 458px;
+}
+.about-title {
+  font-family: "Museo Cyrl 900";
+  font-size: 32px;
+}
+.about-author {
+  width: 553px;
+  height: 348px;
+  padding: 68px 0;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.author-avatar {
+  margin-right: 21px;
+}
+.author-info {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 27px;
+  max-width: 400px;
+}
+.personal-info {
+  max-width: 226px;
+}
+.author-description {
+  margin: auto;
+  max-width: 387px;
+}
+.name {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+.web-site {
+  text-decoration: none;
+  color: inherit;
 }
