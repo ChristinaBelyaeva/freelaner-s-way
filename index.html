@@ -35,7 +35,10 @@
     <!-- Главная секция -->
     <section class="hero">
       <div class="hero-container">
-        <img src="img/book.png" alt="photo: book" class="hero-image">
+        <div class="image-block">
+          <img src="img/book.png" alt="photo: book" class="hero-image">
+          <span class="sale-label">Скидка 30%</span>
+        </div>
       <div class="hero-text">
         <span class="author">Артем Исламов</span>
         <!-- /.author -->
@@ -134,32 +137,49 @@
     <div class="footer-container">
       <div class="requisites">
         <h3 class="footer-title">Реквизиты</h3>
-        <span class="requisites-text entity">ИП Исламов Артем Данисович</span>
-        <span class="requisites-text taxpayer-number">ИНН 026408036102</span>
-        <span class="requisites-text registration-number">ОГРНИП 318028000152678</span>
+        <ul class="footer-list">
+          <li class="list-item">ИП Исламов Артем Данисович</li>
+          <li class="list-item">ИНН 026408036102</li>
+          <li class="list-item">ОГРНИП 318028000152678</li>
+        </ul>
       </div>
       <!-- /.requisites -->
       <div class="information">
         <h3 class="footer-title">Информация</h3>
-        <a href="#" class="information-text confidentiality">Политика конфиденциальности</a>
-        <a href="#" class="information-text processing-rules">Правила обработки данных</a>
-        <a href="#" class="information-text contract">Договор-оферта</a>
+        <ul class="footer-list">
+          <li class="list-item">
+            <a href="#" class="footer-link">Политика конфиденциальности</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="footer-link">Правила обработки данных</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="footer-link">Договор-оферта</a>
+          </li>
+        </ul>
       </div>
       <!-- /.information -->
       <div class="contacts">
         <h3 class="footer-title">Контакты</h3>
-        <a href="freelance-book@ya.ru" class="contacts-text Email">freelance-book@ya.ru</a>
-        <a href="vk.me/aislam23" class="contacts-text vk">vk.me/aislam23</a>
-        <a href="t.me/aislam23" class="contacts-text mail">t.me/aislam23</a>
+        <ul class="footer-list">
+          <li class="list-item">
+            <a href="mailto:freelance-book@ya.ru" class="footer-link">freelance-book@ya.ru</a>
+          </li>
+          <li class="list-item">
+            <a href="https://vk.me/aislam23" class="footer-link">vk.me/aislam23</a>
+          </li>
+          <li class="list-item">
+            <a href="https://t.me/aislam23" class="footer-link">t.me/aislam23</a>
+          </li>
+        </ul>
       </div>
       <!-- /.contacts -->
-      <div class="return">
-        <img src="img/return.svg" alt="icon: return" class="return-arrow">
-      </div>
-      <!-- /.return -->
     </div>
     <!-- /.footer-container -->
   </footer>
   <!-- /.footer -->
+  <a href="#" class="to-top">
+    <img src="img/return.png" alt="Наверх">
+  </a>
 </body>
 </html>

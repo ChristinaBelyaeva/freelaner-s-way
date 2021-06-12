@@ -27,9 +27,13 @@ body {
 }
 
 .header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
   background-color: #f1f1f1;
   padding: 22px 0;
-  margin-bottom: 62px;
 }
 
 .header-container {
@@ -65,6 +69,8 @@ body {
 /* Главная секция */
 .hero {
   margin-bottom: 71px;
+  margin-top: 60px;
+  padding-top: 62px;
 }
 
 .hero-container {
@@ -74,8 +80,20 @@ body {
   align-items: center;
 }
 
-.hero-image {
+.image-block {
+  position: relative;
   margin-right: 122px;
+}
+
+.sale-label {
+  background-color: #c93535;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 18px;
+  position: absolute;
+  top: 22px;
+  right: 0;
 }
 
 .author {
@@ -244,7 +262,7 @@ body {
 
 /* Подвал сайта */
 .footer {
-  padding-top: 61px;
+  padding-top: 60px;
   padding-bottom: 93px;
   background-color: #f1f1f1;
 }
@@ -253,12 +271,46 @@ body {
   max-width: 1140px;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-title {
+  font-family: "Museo Cyrl 700";
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  margin-bottom: 16px;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: inherit;
 }
 
 .requisites {
-  display: block;
+  margin-right: 167px;
 }
 
-.requisites-text {
+.information {
+  margin-right: 158px;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
+  border-radius: 4px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  padding: 18px;
 }
