@@ -11,6 +11,15 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Museo Cyrl 700";
+  src: url("../fonts/MuseoCyrl-700.woff2") format("woff2"),
+    url("../fonts/MuseoCyrl-700.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -144,55 +153,70 @@ body {
 }
 
 /* О книге */
-.container-about {
-  background-color: #f1f1f1;
-  padding: 95px 0;
-}
-
-.about {
+.about-container {
   max-width: 1140px;
   margin: auto;
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 }
+
+.about {
+  background-color: #f1f1f1;
+  padding: 99px 0;
+}
+
 .about-book {
-  max-width: 458px;
+  max-width: 454px;
+  flex-shrink: 0;
 }
-.about-title {
+
+.section-title {
   font-family: "Museo Cyrl 900";
   font-size: 32px;
 }
+.about-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 .about-author {
-  width: 553px;
-  height: 348px;
-  padding: 68px 0;
+  max-width: 552px;
+  padding: 68px 53px;
   background-color: #fff;
-  border-radius: 5px;
-}
-.author-avatar {
-  margin-right: 21px;
-}
-.author-info {
-  margin: auto;
+  border-radius: 10px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 1px 120px rgba(161, 161, 161, 0.08);
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 27px;
-  max-width: 400px;
 }
-.personal-info {
-  max-width: 226px;
+
+.author-avatar {
+  width: 100px;
+  height: 100px;
+  margin-right: 21px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-.author-description {
-  margin: auto;
-  max-width: 387px;
-}
-.name {
-  display: block;
+
+.author-name {
+  font-size: 16px;
+  font-family: "Museo Cyrl 700";
+  margin: 0;
   margin-bottom: 14px;
-  font-weight: bold;
 }
-.web-site {
+
+.author-link {
+  font-size: 14px;
   text-decoration: none;
   color: inherit;
+}
+.author-text {
+  margin-top: 24px;
+  flex-basis: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
 }
